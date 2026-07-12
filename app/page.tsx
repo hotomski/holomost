@@ -158,17 +158,23 @@ export default function HoloMostPage() {
         <p style={{ fontSize: 15, color: "#52525b", marginBottom: 28 }}>
           Investors, press, partnerships — we&apos;d love to hear from you.
         </p>
-        <a
-          href="mailto:hello@holomost.com"
-          style={{
-            display: "inline-block",
-            border: "1px solid #7c3aed55", color: "#c4b5fd",
-            padding: "12px 28px", borderRadius: 12,
-            fontWeight: 600, fontSize: 14, textDecoration: "none",
-          }}
-        >
-          hello@holomost.com
-        </a>
+        <div style={{ display: "flex", flexDirection: "column", gap: 12, alignItems: "center" }}>
+          {[
+            { name: "Sofija Hotomski", email: "sofija.hotomski@holomost.com" },
+            { name: "Mirjana Hotomski", email: "mirjana.hotomski@holomost.com" },
+            { name: "Olga Hotomski", email: "olga.hotomski@holomost.com" },
+          ].map(({ name, email }) => (
+            <a key={email} href={`mailto:${email}`} style={{
+              display: "flex", alignItems: "center", gap: 12,
+              border: "1px solid #7c3aed55", color: "#c4b5fd",
+              padding: "10px 24px", borderRadius: 12,
+              fontWeight: 500, fontSize: 14, textDecoration: "none",
+            }}>
+              <span style={{ color: "#52525b", fontSize: 13 }}>{name}</span>
+              <span>{email}</span>
+            </a>
+          ))}
+        </div>
       </section>
 
       {/* Footer */}
