@@ -6,16 +6,19 @@ const TEAM = [
     name: "Sofija Hotomski",
     role: "Co-founder · CPO",
     bio: "Started her career as a software engineer before pivoting to product management and requirements engineering — the discipline of turning human needs into technology. PhD in Computer Science from the University of Zurich, where she also taught software and requirements engineering. 15 years across Schneider Electric, Siemens, and academia.",
+    photo: "/images/sofija.JPG",
   },
   {
     name: "Olga Hotomski",
     role: "Co-founder · CTO",
     bio: "Enterprise technology professional with 15+ years in utilities and smart grid systems at Schneider Electric. Works on cloud-native grid intelligence platforms — the infrastructure that makes modern energy networks think. Brings the engineering depth to build systems that scale.",
+    photo: "/images/olga.jpg",
   },
   {
     name: "Mirjana Hotomski",
     role: "Co-founder · Head of Learning",
     bio: "PhD in Mathematics Education from Tufts University. Researcher in technology-enhanced learning, constructivism, and curriculum design. Software developer turned education scientist — uniquely placed to design AI that doesn't just answer questions but actually helps people learn.",
+    photo: "/images/mirjana.png",
   },
 ];
 
@@ -135,12 +138,11 @@ export default function HoloMostPage() {
         </p>
 
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 16 }}>
-          {TEAM.map(({ name, role, bio }) => (
+          {TEAM.map(({ name, role, bio, photo }) => (
             <div key={name} style={{ background: "#080808", border: "1px solid #1a1a1a", borderRadius: 18, padding: "28px 24px" }}>
-              <div style={{
-                width: 48, height: 48, borderRadius: "50%", marginBottom: 16,
-                background: "linear-gradient(135deg, #7c3aed, #19f0ff22)",
-                border: "1px solid #7c3aed44",
+              <img src={photo} alt={name} style={{
+                width: 72, height: 72, borderRadius: "50%", marginBottom: 16,
+                objectFit: "cover", border: "2px solid #7c3aed44", display: "block",
               }} />
               <div style={{ fontSize: 15, fontWeight: 700, color: "#e4e4e7", marginBottom: 4 }}>{name}</div>
               <div style={{ fontSize: 11, fontWeight: 600, color: "#7c3aed", textTransform: "uppercase", letterSpacing: "0.07em", marginBottom: 10 }}>{role}</div>
