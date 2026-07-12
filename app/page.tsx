@@ -3,18 +3,18 @@ const gradStyle: React.CSSProperties = { background: grad, WebkitBackgroundClip:
 
 const TEAM = [
   {
-    name: "Sister One",
-    role: "Co-founder · CEO",
-    bio: "One-line bio here.",
+    name: "Sofija Hotomski",
+    role: "Co-founder · CPO",
+    bio: "Started her career as a software engineer before pivoting to product management and requirements engineering — the discipline of turning human needs into technology. PhD in Computer Science from the University of Zurich, where she also taught software and requirements engineering. 15 years across Schneider Electric, Siemens, and academia.",
   },
   {
     name: "Sister Two",
-    role: "Co-founder · CTO",
+    role: "Co-founder",
     bio: "One-line bio here.",
   },
   {
     name: "Sister Three",
-    role: "Co-founder · CPO",
+    role: "Co-founder",
     bio: "One-line bio here.",
   },
 ];
