@@ -8,14 +8,14 @@ const TEAM = [
     bio: "Started her career as a software engineer before pivoting to product management and requirements engineering — the discipline of turning human needs into technology. PhD in Computer Science from the University of Zurich, where she also taught software and requirements engineering. 15 years across Schneider Electric, Siemens, and academia.",
   },
   {
-    name: "Sister Two",
-    role: "Co-founder",
-    bio: "One-line bio here.",
+    name: "Olga Hotomski",
+    role: "Co-founder · CTO",
+    bio: "Enterprise technology professional with 15+ years in utilities and smart grid systems at Schneider Electric. Works on cloud-native grid intelligence platforms — the infrastructure that makes modern energy networks think. Brings the engineering depth to build systems that scale.",
   },
   {
-    name: "Sister Three",
-    role: "Co-founder",
-    bio: "One-line bio here.",
+    name: "Mirjana Hotomski",
+    role: "Co-founder · Head of Learning",
+    bio: "PhD in Mathematics Education from Tufts University. Researcher in technology-enhanced learning, constructivism, and curriculum design. Software developer turned education scientist — uniquely placed to design AI that doesn't just answer questions but actually helps people learn.",
   },
 ];
 
