@@ -72,6 +72,18 @@ export default function HoloMostPage() {
         </p>
       </section>
 
+      {/* Video */}
+      <section style={{ maxWidth: 800, margin: "0 auto", padding: "0 24px 100px" }}>
+        <video
+          src="/videos/HoloVideos.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          style={{ width: "100%", borderRadius: 20, border: "1px solid #e4e4e7", boxShadow: "0 4px 24px rgba(0,0,0,0.08)" }}
+        />
+      </section>
+
       {/* Mission */}
       <section style={{ maxWidth: 800, margin: "0 auto", padding: "0 24px 100px" }}>
         <div style={{
