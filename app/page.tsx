@@ -3,11 +3,11 @@ const gradStyle: React.CSSProperties = { background: grad, WebkitBackgroundClip:
 
 const TEAM = [
   {
-    name: "Sofija Hotomski",
-    role: "Co-founder · CPO",
-    bio: "Started her career as a software engineer before pivoting to product management and requirements engineering — the discipline of turning human needs into technology. PhD in Computer Science from the University of Zurich, where she also taught software and requirements engineering. 15 years across Schneider Electric, Siemens, and academia.",
-    photo: "/images/sofija.JPG",
-    email: "sofija.hotomski@holomost.com",
+    name: "Mirjana Hotomski",
+    role: "Co-founder · CEO",
+    bio: "PhD in Mathematics Education from Tufts University. Researcher in technology-enhanced learning, constructivism, and curriculum design. Software developer turned education scientist — uniquely placed to design AI that doesn't just answer questions but actually helps people learn.",
+    photo: "/images/mirjana.png",
+    email: "mirjana.hotomski@holomost.com",
   },
   {
     name: "Olga Hotomski",
@@ -17,11 +17,11 @@ const TEAM = [
     email: "olga.hotomski@holomost.com",
   },
   {
-    name: "Mirjana Hotomski",
-    role: "Co-founder · CEO",
-    bio: "PhD in Mathematics Education from Tufts University. Researcher in technology-enhanced learning, constructivism, and curriculum design. Software developer turned education scientist — uniquely placed to design AI that doesn't just answer questions but actually helps people learn.",
-    photo: "/images/mirjana.png",
-    email: "mirjana.hotomski@holomost.com",
+    name: "Sofija Hotomski",
+    role: "Co-founder · CPO",
+    bio: "Started her career as a software engineer before pivoting to product management and requirements engineering — the discipline of turning human needs into technology. PhD in Computer Science from the University of Zurich, where she also taught software and requirements engineering. 15 years across Schneider Electric, Siemens, and academia.",
+    photo: "/images/sofija.JPG",
+    email: "sofija.hotomski@holomost.com",
   },
 ];
 
