@@ -11,14 +11,14 @@ const TEAM = [
   },
   {
     name: "Olga Hotomski",
-    role: "Co-founder · CTO",
+    role: "Co-founder · COO",
     bio: "Enterprise technology professional with 15+ years in utilities and smart grid systems at Schneider Electric. Works on cloud-native grid intelligence platforms — the infrastructure that makes modern energy networks think. Brings the engineering depth to build systems that scale.",
     photo: "/images/olga.jpg",
     email: "olga.hotomski@holomost.com",
   },
   {
     name: "Mirjana Hotomski",
-    role: "Co-founder · Head of Learning",
+    role: "Co-founder · CEO",
     bio: "PhD in Mathematics Education from Tufts University. Researcher in technology-enhanced learning, constructivism, and curriculum design. Software developer turned education scientist — uniquely placed to design AI that doesn't just answer questions but actually helps people learn.",
     photo: "/images/mirjana.png",
     email: "mirjana.hotomski@holomost.com",
