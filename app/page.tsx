@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 
 const grad = "linear-gradient(90deg, #7c3aed, #0ea5e9)";
 const gradStyle: React.CSSProperties = { background: grad, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" };
@@ -32,6 +32,22 @@ export default function HoloMostPage() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [muted, setMuted] = useState(true);
 
+  useEffect(() => {
+    const v = videoRef.current;
+    if (!v) return;
+    const unlock = () => {
+      v.muted = false;
+      setMuted(false);
+      document.removeEventListener("click", unlock);
+      document.removeEventListener("scroll", unlock);
+    };
+    document.addEventListener("click", unlock, { once: true });
+    document.addEventListener("scroll", unlock, { once: true });
+    return () => {
+      document.removeEventListener("click", unlock);
+      document.removeEventListener("scroll", unlock);
+    };
+  }, []);
 
   return (
     <div style={{ background: "#fafafa", color: "#18181b", minHeight: "100vh", fontFamily: "system-ui, -apple-system, sans-serif" }}>
