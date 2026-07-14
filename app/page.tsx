@@ -1,3 +1,6 @@
+"use client";
+import { useRef, useState } from "react";
+
 const grad = "linear-gradient(90deg, #7c3aed, #0ea5e9)";
 const gradStyle: React.CSSProperties = { background: grad, WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent" };
 
@@ -26,6 +29,9 @@ const TEAM = [
 ];
 
 export default function HoloMostPage() {
+  const videoRef = useRef<HTMLVideoElement>(null);
+  const [muted, setMuted] = useState(true);
+
   return (
     <div style={{ background: "#fafafa", color: "#18181b", minHeight: "100vh", fontFamily: "system-ui, -apple-system, sans-serif" }}>
 
@@ -74,14 +80,32 @@ export default function HoloMostPage() {
 
       {/* Video */}
       <section style={{ maxWidth: 800, margin: "0 auto", padding: "0 24px 100px" }}>
-        <video
-          src="/videos/HoloVideos.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-          style={{ width: "100%", borderRadius: 20, border: "1px solid #e4e4e7", boxShadow: "0 4px 24px rgba(0,0,0,0.08)" }}
-        />
+        <div style={{ position: "relative", borderRadius: 20, overflow: "hidden", border: "1px solid #e4e4e7", boxShadow: "0 4px 24px rgba(0,0,0,0.08)" }}>
+          <video
+            ref={videoRef}
+            src="/videos/HoloVideos.mp4"
+            autoPlay muted loop playsInline
+            style={{ width: "100%", display: "block" }}
+          />
+          <button
+            onClick={() => {
+              const v = videoRef.current;
+              if (!v) return;
+              v.muted = !v.muted;
+              setMuted(v.muted);
+            }}
+            style={{
+              position: "absolute", bottom: 10, right: 10,
+              background: "rgba(0,0,0,0.55)", backdropFilter: "blur(8px)",
+              border: "1px solid rgba(255,255,255,0.15)",
+              borderRadius: 8, padding: "4px 9px",
+              color: "#fff", fontSize: 11, fontWeight: 600, cursor: "pointer",
+              display: "flex", alignItems: "center", gap: 4,
+            }}
+          >
+            {muted ? "🔇 Tap for sound" : "🔊 Sound on"}
+          </button>
+        </div>
       </section>
 
       {/* Mission */}
