@@ -36,6 +36,7 @@ export default function HoloMostPage() {
     const v = videoRef.current;
     if (!v) return;
     const unlock = () => {
+      v.currentTime = 0;
       v.muted = false;
       setMuted(false);
       document.removeEventListener("click", unlock);
