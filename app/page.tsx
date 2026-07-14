@@ -32,15 +32,6 @@ export default function HoloMostPage() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [muted, setMuted] = useState(true);
 
-  useEffect(() => {
-    const v = videoRef.current;
-    if (!v) return;
-    const tryUnmute = () => {
-      try { v.muted = false; setMuted(false); } catch { /* blocked by browser, stay muted */ }
-    };
-    v.addEventListener("playing", tryUnmute, { once: true });
-    return () => v.removeEventListener("playing", tryUnmute);
-  }, []);
 
   return (
     <div style={{ background: "#fafafa", color: "#18181b", minHeight: "100vh", fontFamily: "system-ui, -apple-system, sans-serif" }}>
