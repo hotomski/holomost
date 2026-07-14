@@ -12,7 +12,7 @@ const TEAM = [
   {
     name: "Olga Hotomski",
     role: "Co-founder · COO",
-    bio: "Enterprise technology professional with 15+ years in utilities and smart grid systems at Schneider Electric. Works on cloud-native grid intelligence platforms — the infrastructure that makes modern energy networks think. Brings the engineering depth to build systems that scale.",
+    bio: "COO of HoloMost, leading operations, product execution, and customer strategy. With almost 15 years of experience delivering enterprise software across engineering, project management, technical sales, and customer success at Schneider Electric, she specializes in transforming complex technology into scalable products that customers love. She bridges technical teams and business strategy, helping HoloMost execute efficiently while building a product that can reach a global market.",
     photo: "/images/olga.jpg",
     email: "olga.hotomski@holomost.com",
   },
