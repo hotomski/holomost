@@ -37,7 +37,10 @@ export default function HoloMostPage() {
         background: "rgba(250,250,250,0.9)", backdropFilter: "blur(12px)",
         borderBottom: "1px solid #e4e4e7",
       }}>
-        <span style={{ fontSize: 18, fontWeight: 700, letterSpacing: "-0.02em", ...gradStyle }}>HoloMost</span>
+        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
+          <img src="/images/logoChatGPT.png" alt="HoloMost" style={{ width: 36, height: 36, objectFit: "contain" }} />
+          <span style={{ fontSize: 18, fontWeight: 700, letterSpacing: "-0.02em", ...gradStyle }}>HoloMost</span>
+        </div>
         <a
           href="https://holopal.app"
           style={{

@@ -4,6 +4,10 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "HoloMost — Building the bridge between people and their preserved wisdom",
   description: "HoloMost is a technology company building tools that make human knowledge scalably available. Our flagship product is HoloPal.",
+  icons: {
+    icon: "/images/logoChatGPT.png",
+    apple: "/images/logoChatGPT.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
