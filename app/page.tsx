@@ -32,6 +32,16 @@ export default function HoloMostPage() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [muted, setMuted] = useState(true);
 
+  useEffect(() => {
+    const v = videoRef.current;
+    if (!v) return;
+    const tryUnmute = () => {
+      try { v.muted = false; setMuted(false); } catch { /* blocked by browser, stay muted */ }
+    };
+    v.addEventListener("playing", tryUnmute, { once: true });
+    return () => v.removeEventListener("playing", tryUnmute);
+  }, []);
+
   return (
     <div style={{ background: "#fafafa", color: "#18181b", minHeight: "100vh", fontFamily: "system-ui, -apple-system, sans-serif" }}>
 
@@ -103,7 +113,17 @@ export default function HoloMostPage() {
               display: "flex", alignItems: "center", gap: 4,
             }}
           >
-            {muted ? "🔇 Tap for sound" : "🔊 Sound on"}
+            {muted ? (
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="white"/>
+              </svg>
+            ) : (
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" fill="white"/>
+                <line x1="23" y1="9" x2="17" y2="15" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
+                <line x1="17" y1="9" x2="23" y2="15" stroke="white" strokeWidth="2.5" strokeLinecap="round"/>
+              </svg>
+            )}
           </button>
         </div>
       </section>
