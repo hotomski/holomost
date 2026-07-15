@@ -39,15 +39,14 @@ export default function HoloMostPage() {
       v.currentTime = 0;
       v.muted = false;
       setMuted(false);
-      document.removeEventListener("click", unlock);
-      document.removeEventListener("scroll", unlock);
+      v.play().catch(() => {
+        v.muted = true;
+        setMuted(true);
+        v.play().catch(() => {});
+      });
     };
     document.addEventListener("click", unlock, { once: true });
-    document.addEventListener("scroll", unlock, { once: true });
-    return () => {
-      document.removeEventListener("click", unlock);
-      document.removeEventListener("scroll", unlock);
-    };
+    return () => document.removeEventListener("click", unlock);
   }, []);
 
   return (
