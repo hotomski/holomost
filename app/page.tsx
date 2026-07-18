@@ -90,8 +90,8 @@ export default function HoloMostPage() {
           <span style={gradStyle}>shouldn&apos;t be scarce.</span>
         </h1>
 
-        <p style={{ fontSize: 18, color: "#71717a", lineHeight: 1.75, maxWidth: 520, margin: "0 auto" }}>
-          HoloMost builds technology that makes the wisdom, knowledge, and presence of remarkable people available at scale — without replacing them.
+        <p style={{ fontSize: 18, color: "#71717a", lineHeight: 1.75, maxWidth: 560, margin: "0 auto" }}>
+          HoloMost is building the first social network of digital selves — where the wisdom, knowledge, and presence of remarkable people is available to the world in their own voice, from their own face. Not posts you scroll past. Real conversations. Without replacing anyone.
         </p>
       </section>
 
