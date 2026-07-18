@@ -15,7 +15,7 @@ const TEAM = [
   {
     name: "Olga Hotomski",
     role: "Co-founder · COO",
-    bio: "MSc in Information Technology. COO of HoloMost, leading operations, product execution and customer strategy. With almost 15 years of experience delivering enterprise software across engineering, project management, technical sales, and customer success at Schneider Electric, she specializes in transforming complex technology into scalable products that customers love. She bridges technical depth and business strategy, helping HoloMost execute efficiently while building a product that can reach a global market.",
+    bio: "MSc in Information Technology. COO of HoloMost, leading operations, product execution, and customer strategy. Nearly 15 years of experience delivering enterprise software across engineering, project management, technical sales, and customer success at Schneider Electric. Expert at turning complex technology into scalable, customer-focused products.",
     photo: "/images/olga.jpg",
     email: "olga.hotomski@holomost.com",
   },
