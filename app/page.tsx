@@ -91,7 +91,7 @@ export default function HoloMostPage() {
         </h1>
 
         <p style={{ fontSize: 18, color: "#71717a", lineHeight: 1.75, maxWidth: 560, margin: "0 auto" }}>
-          HoloMost is building the first social network of digital selves — where the wisdom, knowledge, and presence of remarkable people is available to the world in their own voice, from their own face. Not posts you scroll past. Real conversations. Without replacing anyone.
+          HoloMost is building the first social network of digital selves — where the wisdom, knowledge, and presence of remarkable people is available to the world in their own voice, from their own face. Not posts you scroll past. Real conversations.
         </p>
       </section>
 
