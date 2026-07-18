@@ -136,26 +136,69 @@ export default function HoloMostPage() {
       </section>
 
       {/* Mission */}
-      <section style={{ maxWidth: 800, margin: "0 auto", padding: "0 24px 100px" }}>
+      <section style={{ maxWidth: 800, margin: "0 auto", padding: "0 24px 80px" }}>
         <div style={{
           background: "#fff", border: "1px solid #e4e4e7", borderRadius: 24, padding: "48px 40px",
           borderLeft: "4px solid #7c3aed",
           boxShadow: "0 1px 3px rgba(0,0,0,0.06)",
         }}>
           <p style={{ fontSize: 11, fontWeight: 600, color: "#7c3aed", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 20 }}>Our mission</p>
-          <p style={{ fontSize: 20, color: "#18181b", lineHeight: 1.75, fontWeight: 400 }}>
+          <p style={{ fontSize: 19, color: "#18181b", lineHeight: 1.75, fontWeight: 400 }}>
             &ldquo;Most&rdquo; means bridge in Serbian. We are three sisters who believe that the most valuable thing a person can leave behind isn&apos;t money or possessions — it&apos;s how they think.
           </p>
-          <p style={{ fontSize: 20, color: "#71717a", lineHeight: 1.75, fontWeight: 400, marginTop: 20 }}>
-            We build bridges: between a professor and her students at 3am, between a parent and grandchildren not yet born, between an expert and everyone who needs their knowledge but can&apos;t reach them.
+          <p style={{ fontSize: 19, color: "#71717a", lineHeight: 1.75, fontWeight: 400, marginTop: 20 }}>
+            For all of human history, knowledge has traveled through proximity. You had to be in the right room, at the right time, to learn from the right person. Most of it was lost. We are the first generation with the tools to change that — AI that learns how a person thinks, voice technology that captures how they sound, animation that puts them in front of you.
           </p>
+          <p style={{ fontSize: 19, color: "#71717a", lineHeight: 1.75, fontWeight: 400, marginTop: 20 }}>
+            HoloMost exists to close that gap. Not by replacing people — people are irreplaceable — but by making what can be shared, available at scale.
+          </p>
+        </div>
+      </section>
+
+      {/* Three pillars */}
+      <section style={{ maxWidth: 800, margin: "0 auto", padding: "0 24px 80px" }}>
+        <p style={{ fontSize: 11, fontWeight: 600, color: "#a1a1aa", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 14 }}>What we preserve</p>
+        <h2 style={{ fontSize: 28, fontWeight: 700, color: "#18181b", marginBottom: 32, letterSpacing: "-0.02em", lineHeight: 1.2 }}>
+          Three things that disappear<br />when a remarkable person is gone.
+        </h2>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 16 }}>
+          {[
+            {
+              word: "Wisdom",
+              body: "How they think. The instincts built from a lifetime of experience. The intuition that tells them which detail matters — the hardest thing to transfer, the most valuable thing to lose.",
+            },
+            {
+              word: "Knowledge",
+              body: "What they know. Forty years of patients. Every student they've helped. A lifetime of learning that accumulates in a person and, too often, ends with them.",
+            },
+            {
+              word: "Presence",
+              body: "Their voice. Their face. The feeling of being in a real conversation with someone who knows. Presence is what makes knowledge feel safe to trust.",
+            },
+          ].map(({ word, body }, i) => (
+            <div key={word} style={{
+              background: "#fff", border: "1px solid #e4e4e7", borderRadius: 18, padding: "28px 24px",
+              boxShadow: "0 1px 3px rgba(0,0,0,0.05)",
+            }}>
+              <div style={{
+                fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.1em",
+                marginBottom: 10,
+                background: i === 0 ? "#7c3aed" : i === 1 ? grad : "#0ea5e9",
+                WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent",
+              }}>
+                {`0${i + 1}`}
+              </div>
+              <div style={{ fontSize: 20, fontWeight: 800, color: "#18181b", marginBottom: 12, letterSpacing: "-0.02em" }}>{word}</div>
+              <div style={{ fontSize: 13, color: "#71717a", lineHeight: 1.75 }}>{body}</div>
+            </div>
+          ))}
         </div>
       </section>
 
       {/* Product */}
       <section style={{ maxWidth: 800, margin: "0 auto", padding: "0 24px 100px" }}>
         <p style={{ fontSize: 11, fontWeight: 600, color: "#a1a1aa", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 14 }}>Our product</p>
-        <h2 style={{ fontSize: 32, fontWeight: 700, color: "#18181b", marginBottom: 40, letterSpacing: "-0.02em" }}>Flagship: HoloPal</h2>
+        <h2 style={{ fontSize: 28, fontWeight: 700, color: "#18181b", marginBottom: 32, letterSpacing: "-0.02em", lineHeight: 1.2 }}>HoloPal — the first social network<br />of digital selves.</h2>
 
         <div style={{
           background: "#fff", border: "1px solid #e4e4e7", borderRadius: 24, padding: "40px",
@@ -163,17 +206,16 @@ export default function HoloMostPage() {
           boxShadow: "0 1px 3px rgba(0,0,0,0.06)",
         }}>
           <div>
-            <div style={{ fontSize: 36, marginBottom: 16 }}>🔮</div>
-            <h3 style={{ fontSize: 18, fontWeight: 700, color: "#18181b", marginBottom: 12 }}>
-              Preserve how you think. Scale your wisdom. Leave more than memories.
-            </h3>
-            <p style={{ fontSize: 14, color: "#71717a", lineHeight: 1.75 }}>
-              HoloPal lets anyone journal their knowledge, verify their AI model is accurate, and share a hologram of themselves — with their voice, their face, their thinking — with anyone who needs them.
+            <p style={{ fontSize: 15, color: "#71717a", lineHeight: 1.8, marginBottom: 20 }}>
+              Every person on HoloPal builds a digital self — an AI trained on their own knowledge, speaking in their own cloned voice, animated with their own face.
+            </p>
+            <p style={{ fontSize: 15, color: "#71717a", lineHeight: 1.8, marginBottom: 24 }}>
+              You don&apos;t scroll their posts. You have a real conversation with them. Add your GP&apos;s digital self, your professor&apos;s, your family&apos;s — and hear the answer in the voice you know, from the face you trust.
             </p>
             <a
               href="https://holopal.app"
               style={{
-                display: "inline-block", marginTop: 24,
+                display: "inline-block",
                 background: "#7c3aed", color: "#fff",
                 padding: "10px 22px", borderRadius: 10,
                 fontWeight: 600, fontSize: 13, textDecoration: "none",
@@ -184,15 +226,15 @@ export default function HoloMostPage() {
           </div>
           <div style={{ display: "flex", flexDirection: "column", gap: 20 }}>
             {[
-              { icon: "📓", label: "Journal", desc: "Speak or type what you know" },
-              { icon: "🪞", label: "Verify", desc: "Talk to your hologram — fix what's wrong" },
-              { icon: "🔮", label: "Share", desc: "Anyone can ask you anything, anywhere" },
+              { icon: "📓", label: "Build", desc: "Journal your knowledge, memories, and reasoning. Ten minutes a week is enough." },
+              { icon: "🪞", label: "Verify", desc: "Talk to your hologram. Correct what's wrong until it sounds like you." },
+              { icon: "🔮", label: "Share", desc: "Go live in the network. Anyone you choose can have a real conversation with you." },
             ].map(({ icon, label, desc }) => (
               <div key={label} style={{ display: "flex", gap: 14, alignItems: "flex-start" }}>
                 <span style={{ fontSize: 20, marginTop: 2 }}>{icon}</span>
                 <div>
-                  <div style={{ fontSize: 13, fontWeight: 700, color: "#18181b", marginBottom: 2 }}>{label}</div>
-                  <div style={{ fontSize: 12, color: "#71717a" }}>{desc}</div>
+                  <div style={{ fontSize: 13, fontWeight: 700, color: "#18181b", marginBottom: 4 }}>{label}</div>
+                  <div style={{ fontSize: 12, color: "#71717a", lineHeight: 1.65 }}>{desc}</div>
                 </div>
               </div>
             ))}
