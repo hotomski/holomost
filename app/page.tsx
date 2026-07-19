@@ -6,25 +6,25 @@ const gradStyle: React.CSSProperties = { background: grad, WebkitBackgroundClip:
 
 const TEAM = [
   {
+    name: "Sofija Hotomski",
+    role: "Founder & CEO",
+    bio: "Started her career as a software engineer before pivoting to product management and requirements engineering — the discipline of turning human needs into technology. PhD in Computer Science from the University of Zurich, where she also taught software and requirements engineering. 15 years across Schneider Electric, Siemens, and academia.",
+    photo: "/images/sofija.JPG",
+    email: "sofija.hotomski@holomost.com",
+  },
+  {
     name: "Mirjana Hotomski",
-    role: "Co-founder · Chief Learning Officer",
-    bio: "PhD in Mathematics Education from Tufts University. Researcher in technology-enhanced learning, constructivism, and curriculum design. Software developer turned education scientist — uniquely placed to design AI that doesn't just answer questions but actually helps people learn.",
+    role: "Volunteer",
+    bio: "Ph.D. from Tufts studying the multimodality of human thinking — how understanding lives not just in words, but in voice, gesture, and expression. Volunteer at HoloMost, pairing that research with 20+ years of building mission-critical enterprise systems at Verizon. That's the exact question HoloPal is built on: what makes a digital self actually feel like the person behind it.",
     photo: "/images/mirjana.png",
     email: "mirjana.hotomski@holomost.com",
   },
   {
     name: "Olga Hotomski",
-    role: "Co-founder · COO",
-    bio: "MSc in Information Technology. COO of HoloMost, leading operations, product execution, and customer strategy. Nearly 15 years of experience delivering enterprise software across engineering, project management, technical sales, and customer success at Schneider Electric. Expert at turning complex technology into scalable, customer-focused products.",
+    role: "Volunteer",
+    bio: "MSc in Information Technology. Volunteer at HoloMost, bringing nearly 15 years of experience delivering enterprise software across engineering, project management, technical sales, and customer success at Schneider Electric. Expert at turning complex technology into scalable, customer-focused products.",
     photo: "/images/olga.jpg",
     email: "olga.hotomski@holomost.com",
-  },
-  {
-    name: "Sofija Hotomski",
-    role: "Co-founder · CEO",
-    bio: "Started her career as a software engineer before pivoting to product management and requirements engineering — the discipline of turning human needs into technology. PhD in Computer Science from the University of Zurich, where she also taught software and requirements engineering. 15 years across Schneider Electric, Siemens, and academia.",
-    photo: "/images/sofija.JPG",
-    email: "sofija.hotomski@holomost.com",
   },
 ];
 
