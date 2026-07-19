@@ -35,18 +35,18 @@ export default function HoloMostPage() {
   useEffect(() => {
     const v = videoRef.current;
     if (!v) return;
-    const unlock = () => {
-      v.currentTime = 0;
-      v.muted = false;
-      setMuted(false);
-      v.play().catch(() => {
-        v.muted = true;
-        setMuted(true);
-        v.play().catch(() => {});
-      });
-    };
-    document.addEventListener("click", unlock, { once: true });
-    return () => document.removeEventListener("click", unlock);
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          v.play().catch(() => {});
+        } else {
+          v.pause();
+        }
+      },
+      { threshold: 0.5 }
+    );
+    observer.observe(v);
+    return () => observer.disconnect();
   }, []);
 
   return (
@@ -101,7 +101,7 @@ export default function HoloMostPage() {
           <video
             ref={videoRef}
             src="/videos/HoloVideos.mp4"
-            autoPlay muted loop playsInline
+            muted loop playsInline
             style={{ width: "100%", display: "block" }}
           />
           <button
