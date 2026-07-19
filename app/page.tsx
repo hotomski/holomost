@@ -108,8 +108,10 @@ export default function HoloMostPage() {
             onClick={() => {
               const v = videoRef.current;
               if (!v) return;
-              v.muted = !v.muted;
-              setMuted(v.muted);
+              const nextMuted = !v.muted;
+              if (!nextMuted) v.currentTime = 0;
+              v.muted = nextMuted;
+              setMuted(nextMuted);
             }}
             style={{
               position: "absolute", bottom: 10, right: 10,
