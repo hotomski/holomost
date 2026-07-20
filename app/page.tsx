@@ -159,23 +159,23 @@ export default function HoloMostPage() {
 
       {/* Three pillars */}
       <section style={{ maxWidth: 800, margin: "0 auto", padding: "0 24px 80px" }}>
-        <p style={{ fontSize: 11, fontWeight: 600, color: "#a1a1aa", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 14 }}>What we preserve</p>
+        <p style={{ fontSize: 11, fontWeight: 600, color: "#a1a1aa", textTransform: "uppercase", letterSpacing: "0.1em", marginBottom: 14 }}>What you get</p>
         <h2 style={{ fontSize: 28, fontWeight: 700, color: "#18181b", marginBottom: 32, letterSpacing: "-0.02em", lineHeight: 1.2 }}>
-          Three things that disappear<br />when a remarkable person is gone.
+          Three things you used to need<br />someone in the room for.
         </h2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))", gap: 16 }}>
           {[
             {
               word: "Wisdom",
-              body: "How they think. The instincts built from a lifetime of experience. The intuition that tells them which detail matters — the hardest thing to transfer, the most valuable thing to lose.",
+              body: "How they think. The instincts built from a lifetime of experience. The intuition that tells them which detail matters — the hardest thing to put into words, and the most useful thing to have on demand.",
             },
             {
               word: "Knowledge",
-              body: "What they know. Forty years of patients. Every student they've helped. A lifetime of learning that accumulates in a person and, too often, ends with them.",
+              body: "What they know. Forty years of patients. Every student they've helped. A lifetime of learning, available to anyone who asks — any hour, not just when there's time.",
             },
             {
               word: "Presence",
-              body: "Their voice. Their face. The feeling of being in a real conversation with someone who knows. Presence is what makes knowledge feel safe to trust.",
+              body: "Their voice. Their face. The feeling of being in a real conversation with someone who knows. Presence is what makes knowledge feel safe to trust — now available whenever you need it.",
             },
           ].map(({ word, body }, i) => (
             <div key={word} style={{
