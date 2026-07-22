@@ -97,7 +97,7 @@ export default function HoloMostPage() {
       <header className={styles.navWrap}>
         <div className={cx(styles.container, styles.nav)}>
           <a href="/" className={styles.brand}>
-            <img src="/images/logoChatGPT.png" alt="HoloMost" className={styles.brandLogo} />
+            <img src="/images/holomost-mark.svg" alt="HoloMost" className={styles.brandLogo} />
             <span className={styles.brandName}>HoloMost</span>
           </a>
           <a href="https://holopal.app" className={cx(styles.btn, styles.btnDark)}>Try HoloPal →</a>
