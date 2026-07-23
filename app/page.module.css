@@ -182,11 +182,19 @@
 }
 
 /* ============ Hero ============ */
+.heroGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(20px, 3vw, 40px);
+  align-items: stretch;
+}
 .heroCard {
   background: #E4DBCB;
   border-radius: 28px;
   padding: clamp(48px, 8vw, 88px) clamp(24px, 6vw, 64px);
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-image: radial-gradient(70% 90% at 50% 0%, rgba(150,190,215,0.45) 0%, rgba(150,190,215,0.1) 45%, rgba(150,190,215,0) 68%);
 }
 .heroCard h1 {
@@ -194,15 +202,22 @@
   line-height: 1.06;
   font-weight: 500;
   letter-spacing: -0.035em;
-  max-width: 780px;
-  margin: 0 auto 26px;
+  margin: 0 0 26px;
 }
 .heroLede {
   font-size: clamp(16px, 1.8vw, 19px);
   line-height: 1.7;
   color: #2A2923;
-  max-width: 620px;
-  margin: 0 auto;
+}
+.heroVideoCol {
+  display: flex;
+  flex-direction: column;
+}
+.heroVideoCol .eyebrowPill { align-self: flex-start; }
+.heroVideoCard { flex: 1; }
+
+@media (max-width: 900px) {
+  .heroGrid { grid-template-columns: 1fr; }
 }
 
 /* ============ Video ============ */
