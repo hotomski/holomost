@@ -54,6 +54,7 @@ const PRODUCT_STEPS = [
 export default function HoloMostPage() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [muted, setMuted] = useState(true);
+  const [navOpen, setNavOpen] = useState(false);
 
   useEffect(() => {
     const v = videoRef.current;
@@ -100,7 +101,24 @@ export default function HoloMostPage() {
             <img src="/images/holomost-mark.svg" alt="HoloMost" className={styles.brandLogo} />
             <span className={styles.brandName}>HoloMost</span>
           </a>
-          <a href="https://holopal.app" className={cx(styles.btn, styles.btnDark)}>Try HoloPal →</a>
+
+          <nav id="navLinks" className={cx(styles.navLinks, navOpen && styles.isOpen)}>
+            <a href="#mission" onClick={() => setNavOpen(false)}>Mission</a>
+            <a href="#what-you-get" onClick={() => setNavOpen(false)}>What you get</a>
+            <a href="#product" onClick={() => setNavOpen(false)}>Product</a>
+            <a href="#team" onClick={() => setNavOpen(false)}>Team</a>
+            <a href="https://holopal.app" className={cx(styles.btn, styles.btnDark)} onClick={() => setNavOpen(false)}>Try HoloPal →</a>
+          </nav>
+
+          <button
+            className={styles.navToggle}
+            aria-label="Toggle menu"
+            aria-expanded={navOpen}
+            aria-controls="navLinks"
+            onClick={() => setNavOpen((o) => !o)}
+          >
+            <span></span><span></span><span></span>
+          </button>
         </div>
       </header>
 
@@ -149,7 +167,7 @@ export default function HoloMostPage() {
         </section>
 
         {/* ===== Mission ===== */}
-        <section className={styles.container}>
+        <section className={styles.container} id="mission">
           <div className={cx(styles.missionCard, styles.noise)}>
             <span className={styles.eyebrow}>Our mission</span>
             <p className={styles.bodyLg}>
@@ -165,7 +183,7 @@ export default function HoloMostPage() {
         </section>
 
         {/* ===== Three pillars ===== */}
-        <section className={styles.container}>
+        <section className={styles.container} id="what-you-get">
           <span className={styles.eyebrow}>What you get</span>
           <h2 className={styles.sectionTitle}>Three things you used to need<br />someone in the room for.</h2>
           <div className={styles.stepsGrid}>
@@ -182,7 +200,7 @@ export default function HoloMostPage() {
         </section>
 
         {/* ===== Product ===== */}
-        <section className={styles.container}>
+        <section className={styles.container} id="product">
           <span className={styles.eyebrow}>Our product</span>
           <h2 className={styles.sectionTitle}>HoloPal — the first social network<br />of digital selves.</h2>
           <div className={styles.productCard}>
@@ -210,7 +228,7 @@ export default function HoloMostPage() {
         </section>
 
         {/* ===== Team ===== */}
-        <section className={styles.container}>
+        <section className={styles.container} id="team">
           <span className={styles.eyebrow}>The team</span>
           <h2 className={styles.sectionTitle}>Three sisters. One bridge.</h2>
           <p className={styles.sectionSub}>
