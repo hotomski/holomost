@@ -126,26 +126,12 @@ export default function HoloMostPage() {
       <main>
         {/* ===== Hero ===== */}
         <section className={styles.container}>
-          <div className={styles.heroGrid}>
-            <div className={cx(styles.card, styles.heroCard, styles.noise)}>
-              <span className={styles.eyebrowPill}>Building bridges between people and their preserved wisdom</span>
-              <h1>Human knowledge<br />shouldn&apos;t be scarce.</h1>
-              <p className={styles.heroLede}>
-                HoloMost is building the first social network of digital selves — where the wisdom, knowledge, and presence of remarkable people is available to the world in their own voice, from their own face. Not posts you scroll past. Real conversations.
-              </p>
-            </div>
-            <div className={styles.heroVideoCol}>
-              <span className={styles.eyebrowPill}>A word from our CEO</span>
-              <div className={cx(styles.videoCard, styles.noise, styles.heroVideoCard)}>
-                <video
-                  src="/videos/CEO-video.mp4"
-                  className={styles.videoCardVideo}
-                  controls
-                  playsInline
-                  preload="metadata"
-                />
-              </div>
-            </div>
+          <div className={cx(styles.card, styles.heroCard, styles.noise)}>
+            <span className={styles.eyebrowPill}>Building bridges between people and their preserved wisdom</span>
+            <h1>Human knowledge<br />shouldn&apos;t be scarce.</h1>
+            <p className={styles.heroLede}>
+              HoloMost is building the first social network of digital selves — where the wisdom, knowledge, and presence of remarkable people is available to the world in their own voice, from their own face. Not posts you scroll past. Real conversations.
+            </p>
           </div>
         </section>
 
