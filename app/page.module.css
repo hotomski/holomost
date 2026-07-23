@@ -253,6 +253,15 @@
 }
 .bodyLg + .bodyLg { margin-top: 20px; }
 .bodyMuted { color: #55503f; }
+.missionColumns {
+  column-count: 2;
+  column-gap: clamp(32px, 4vw, 56px);
+}
+.missionColumns p { break-inside: avoid; }
+
+@media (max-width: 700px) {
+  .missionColumns { column-count: 1; }
+}
 
 /* ============ Pillars (steps grid) ============ */
 .stepsGrid {

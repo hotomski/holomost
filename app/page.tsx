@@ -103,6 +103,7 @@ export default function HoloMostPage() {
           </a>
 
           <nav id="navLinks" className={cx(styles.navLinks, navOpen && styles.isOpen)}>
+            <a href="#demo" onClick={() => setNavOpen(false)}>Demo</a>
             <a href="#mission" onClick={() => setNavOpen(false)}>Mission</a>
             <a href="#what-you-get" onClick={() => setNavOpen(false)}>What you get</a>
             <a href="#product" onClick={() => setNavOpen(false)}>Product</a>
@@ -131,6 +132,21 @@ export default function HoloMostPage() {
             <p className={styles.heroLede}>
               HoloMost is building the first social network of digital selves — where the wisdom, knowledge, and presence of remarkable people is available to the world in their own voice, from their own face. Not posts you scroll past. Real conversations.
             </p>
+          </div>
+        </section>
+
+        {/* ===== Demo ===== */}
+        <section className={styles.container} id="demo">
+          <span className={styles.eyebrow}>See it in action</span>
+          <h2 className={styles.sectionTitle}>Watch the HoloPal demo.</h2>
+          <div className={cx(styles.videoCard, styles.noise)}>
+            <video
+              src="/videos/demo-final.mp4"
+              className={styles.videoCardVideo}
+              controls
+              playsInline
+              preload="metadata"
+            />
           </div>
         </section>
 
@@ -170,15 +186,18 @@ export default function HoloMostPage() {
         <section className={styles.container} id="mission">
           <div className={cx(styles.missionCard, styles.noise)}>
             <span className={styles.eyebrow}>Our mission</span>
-            <p className={styles.bodyLg}>
-              &ldquo;Most&rdquo; means bridge in Serbian. We are three sisters who believe that the most valuable thing a person can leave behind isn&apos;t money or possessions — it&apos;s how they think.
-            </p>
-            <p className={cx(styles.bodyLg, styles.bodyMuted)}>
-              For all of human history, knowledge has traveled through proximity. You had to be in the right room, at the right time, to learn from the right person. Most of it was lost. We are the first generation with the tools to change that — AI that learns how a person thinks, voice technology that captures how they sound, animation that puts them in front of you.
-            </p>
-            <p className={cx(styles.bodyLg, styles.bodyMuted)}>
-              HoloMost exists to close that gap. Not by replacing people — people are irreplaceable — but by making what can be shared, available at scale.
-            </p>
+            <h2 className={styles.sectionTitle}>Why we&apos;re building<br />HoloMost.</h2>
+            <div className={styles.missionColumns}>
+              <p className={styles.bodyLg}>
+                &ldquo;Most&rdquo; means bridge in Serbian. We are three sisters who believe that the most valuable thing a person can leave behind isn&apos;t money or possessions — it&apos;s how they think.
+              </p>
+              <p className={cx(styles.bodyLg, styles.bodyMuted)}>
+                For all of human history, knowledge has traveled through proximity. You had to be in the right room, at the right time, to learn from the right person. Most of it was lost. We are the first generation with the tools to change that — AI that learns how a person thinks, voice technology that captures how they sound, animation that puts them in front of you.
+              </p>
+              <p className={cx(styles.bodyLg, styles.bodyMuted)}>
+                HoloMost exists to close that gap. Not by replacing people — people are irreplaceable — but by making what can be shared, available at scale.
+              </p>
+            </div>
           </div>
         </section>
 
