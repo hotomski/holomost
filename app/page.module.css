@@ -256,8 +256,8 @@
 .missionColumns {
   column-count: 2;
   column-gap: clamp(32px, 4vw, 56px);
+  column-fill: balance;
 }
-.missionColumns p { break-inside: avoid; }
 
 @media (max-width: 700px) {
   .missionColumns { column-count: 1; }
