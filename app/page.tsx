@@ -188,15 +188,22 @@ export default function HoloMostPage() {
             <span className={styles.eyebrow}>Our mission</span>
             <h2 className={styles.sectionTitle}>Why we&apos;re building<br />HoloMost.</h2>
             <div className={styles.missionColumns}>
-              <p className={styles.bodyLg}>
-                &ldquo;Most&rdquo; means bridge in Serbian. We are three sisters who believe that the most valuable thing a person can leave behind isn&apos;t money or possessions — it&apos;s how they think.
-              </p>
-              <p className={cx(styles.bodyLg, styles.bodyMuted)}>
-                For all of human history, knowledge has traveled through proximity. You had to be in the right room, at the right time, to learn from the right person. Most of it was lost. We are the first generation with the tools to change that — AI that learns how a person thinks, voice technology that captures how they sound, animation that puts them in front of you.
-              </p>
-              <p className={cx(styles.bodyLg, styles.bodyMuted)}>
-                HoloMost exists to close that gap. Not by replacing people — people are irreplaceable — but by making what can be shared, available at scale.
-              </p>
+              <div>
+                <p className={styles.bodyLg}>
+                  &ldquo;Most&rdquo; means bridge in Serbian. We are three sisters who believe that the most valuable thing a person can leave behind isn&apos;t money or possessions — it&apos;s how they think.
+                </p>
+                <p className={cx(styles.bodyLg, styles.bodyMuted)}>
+                  For all of human history, knowledge has traveled through proximity. You had to be in the right room, at the right time, to learn from the right person. Most of it was lost.
+                </p>
+              </div>
+              <div>
+                <p className={cx(styles.bodyLg, styles.bodyMuted)}>
+                  We are the first generation with the tools to change that — AI that learns how a person thinks, voice technology that captures how they sound, animation that puts them in front of you.
+                </p>
+                <p className={cx(styles.bodyLg, styles.bodyMuted)}>
+                  HoloMost exists to close that gap. Not by replacing people — people are irreplaceable — but by making what can be shared available at scale, and present even when you can&apos;t be in the room.
+                </p>
+              </div>
             </div>
           </div>
         </section>

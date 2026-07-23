@@ -214,6 +214,10 @@
   background: #050505;
   box-shadow: 0 40px 90px rgba(90,128,148,0.18);
 }
+
+@media (min-width: 701px) {
+  .videoCard { max-width: 900px; margin: 0 auto; }
+}
 .videoCardVideo {
   position: absolute;
   inset: 0;
@@ -254,13 +258,13 @@
 .bodyLg + .bodyLg { margin-top: 20px; }
 .bodyMuted { color: #55503f; }
 .missionColumns {
-  column-count: 2;
-  column-gap: clamp(32px, 4vw, 56px);
-  column-fill: balance;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: clamp(32px, 4vw, 56px);
 }
 
 @media (max-width: 700px) {
-  .missionColumns { column-count: 1; }
+  .missionColumns { grid-template-columns: 1fr; }
 }
 
 /* ============ Pillars (steps grid) ============ */
