@@ -17,14 +17,14 @@ const TEAM = [
   {
     name: "Mirjana Hotomski",
     role: "Trusted advisor",
-    bio: "Ph.D. from Tufts studying the multimodality of human thinking — how understanding lives not just in words, but in voice, gesture, and expression. Trusted advisor to HoloMost, pairing that research with 25+ years of building mission-critical enterprise systems at Verizon. That's the exact question HoloPal is built on: what makes a digital self actually feel like the person behind it.",
+    bio: "Ph.D. in Math Education from Tufts University, M.A. in Mathematics for Teaching from the Harvard Extension School, and B.S. in Mathematics and Computer Science from the University of Belgrade, Serbia — studying the multimodality of human thinking, how understanding lives not just in words, but in voice, gesture, and expression. Trusted advisor to HoloMost, pairing that research with 25+ years of building mission-critical enterprise systems at Verizon. That's the exact question HoloPal is built on: what makes a digital self actually feel like the person behind it.",
     photo: "/images/mirjana.png",
     email: "mirjana.hotomski@holomost.com",
   },
   {
     name: "Olga Hotomski",
     role: "Trusted advisor",
-    bio: "MSc in Information Technology. Trusted advisor to HoloMost, bringing nearly 15 years of experience delivering enterprise software across engineering, project management, technical sales, and customer success at Schneider Electric. Expert at turning complex technology into scalable, customer-focused products.",
+    bio: "MSc in Information Technology. Trusted advisor to HoloMost, bringing 20 years of professional experience delivering enterprise software across engineering, project management, technical sales, and customer success at Schneider Electric. Expert at turning complex technology into scalable, customer-focused products.",
     photo: "/images/olga.jpg",
     email: "olga.hotomski@holomost.com",
   },
