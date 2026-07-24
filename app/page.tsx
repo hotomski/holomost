@@ -10,7 +10,7 @@ const TEAM = [
   {
     name: "Sofija Hotomski",
     role: "Founder & CEO",
-    bio: "Started her career as a software engineer before pivoting to product management and requirements engineering — the discipline of turning human needs into technology. PhD in Computer Science from the University of Zurich, where she also taught software and requirements engineering. 15 years across Schneider Electric, Siemens, and academia.",
+    bio: "Started her career as a software engineer before pivoting to product management and requirements engineering — the discipline of turning human needs into technology. B.S. and M.S. from the Faculty of Technical Sciences, University of Novi Sad, and a PhD in Computer Science from the University of Zurich, where she also taught software and requirements engineering. 15 years across Schneider Electric, Siemens, and academia.",
     photo: "/images/sofija.JPG",
     email: "sofija.hotomski@holomost.com",
   },
@@ -24,7 +24,7 @@ const TEAM = [
   {
     name: "Olga Hotomski",
     role: "Trusted advisor",
-    bio: "MSc in Information Technology. Trusted advisor to HoloMost, bringing 20 years of professional experience delivering enterprise software across engineering, project management, technical sales, and customer success at Schneider Electric. Expert at turning complex technology into scalable, customer-focused products.",
+    bio: "MSc in Information Technology from the Technical Faculty in Zrenjanin, University of Novi Sad. Trusted advisor to HoloMost, bringing 20 years of professional experience delivering enterprise software across engineering, project management, technical sales, and customer success at Schneider Electric. Expert at turning complex technology into scalable, customer-focused products.",
     photo: "/images/olga.jpg",
     email: "olga.hotomski@holomost.com",
   },
