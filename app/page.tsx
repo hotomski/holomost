@@ -17,7 +17,7 @@ const TEAM = [
   {
     name: "Mirjana Hotomski",
     role: "Trusted advisor",
-    bio: "Ph.D. from Tufts studying the multimodality of human thinking — how understanding lives not just in words, but in voice, gesture, and expression. Trusted advisor to HoloMost, pairing that research with 20+ years of building mission-critical enterprise systems at Verizon. That's the exact question HoloPal is built on: what makes a digital self actually feel like the person behind it.",
+    bio: "Ph.D. from Tufts studying the multimodality of human thinking — how understanding lives not just in words, but in voice, gesture, and expression. Trusted advisor to HoloMost, pairing that research with 25+ years of building mission-critical enterprise systems at Verizon. That's the exact question HoloPal is built on: what makes a digital self actually feel like the person behind it.",
     photo: "/images/mirjana.png",
     email: "mirjana.hotomski@holomost.com",
   },
