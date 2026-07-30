@@ -88,8 +88,7 @@ const PRICING_TIERS = [
     features: [
       "Everything in Free",
       "Conversational-mode journaling — 30 min/month",
-      "Talk to your digital self — cloned voice, 30 min/month",
-      "Talk to others' digital selves — cloned voice for 30 min, then synthetic",
+      "30 min/month of cloned voice — yours or others' digital selves, then synthetic voice",
       "Two animated conversations — one with your digital self, one with someone else's — then continues as a still image",
     ],
     cta: "Get Advanced",
