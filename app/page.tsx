@@ -51,6 +51,64 @@ const PRODUCT_STEPS = [
   { icon: "/images/icon-ask.svg", label: "Share", desc: "Go live in the network. Anyone you choose can have a real conversation with you." },
 ];
 
+const PRICING_TIERS = [
+  {
+    name: "Free",
+    price: "$0",
+    cadence: "",
+    tagline: "Journal, reflect, and browse — no cost, no time limit.",
+    features: [
+      "Pure-mode (text-only) journaling",
+      "Your full personal session history",
+      "Browse friends' public journal sessions as static content",
+      "No conversations, voice cloning, or animation",
+    ],
+    cta: "Start free",
+  },
+  {
+    name: "Basic",
+    price: "$9.99",
+    cadence: "/month",
+    tagline: "Start having real conversations, in a synthetic voice.",
+    features: [
+      "Everything in Free",
+      "Conversational-mode journaling — 30 min/month",
+      "Talk to your digital self — synthetic voice",
+      "Talk to others' digital selves — synthetic voice",
+      "No animation",
+    ],
+    cta: "Get Basic",
+  },
+  {
+    name: "Advanced",
+    price: "$16.99",
+    cadence: "/month",
+    badge: "Most popular",
+    tagline: "Hear the real voice. See the real face.",
+    features: [
+      "Everything in Free",
+      "Conversational-mode journaling — 30 min/month",
+      "Talk to your digital self — cloned voice, 30 min/month",
+      "Talk to others' digital selves — cloned voice for 30 min, then synthetic",
+      "Two animated conversations — one with your digital self, one with someone else's — then continues as a still image",
+    ],
+    cta: "Get Advanced",
+  },
+  {
+    name: "Pro",
+    price: "$29.99",
+    cadence: "/month",
+    tagline: "Unlimited conversations, always in the real cloned voice.",
+    features: [
+      "Everything in Free",
+      "Unlimited conversational-mode journaling",
+      "Unlimited talk to your digital self and others' digital selves — cloned voice",
+      "10 minutes of animation per month, shared across every conversation",
+    ],
+    cta: "Get Pro",
+  },
+];
+
 export default function HoloMostPage() {
   const videoRef = useRef<HTMLVideoElement>(null);
   const [muted, setMuted] = useState(true);
@@ -107,6 +165,7 @@ export default function HoloMostPage() {
             <a href="#mission" onClick={() => setNavOpen(false)}>Mission</a>
             <a href="#what-you-get" onClick={() => setNavOpen(false)}>What you get</a>
             <a href="#product" onClick={() => setNavOpen(false)}>Product</a>
+            <a href="#pricing" onClick={() => setNavOpen(false)}>Pricing</a>
             <a href="#team" onClick={() => setNavOpen(false)}>Team</a>
             <a href="https://holopal.app" className={cx(styles.btn, styles.btnDark)} onClick={() => setNavOpen(false)}>Try HoloPal →</a>
           </nav>
@@ -250,6 +309,29 @@ export default function HoloMostPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </section>
+
+        {/* ===== Pricing ===== */}
+        <section className={styles.container} id="pricing">
+          <span className={styles.eyebrow}>Pricing</span>
+          <h2 className={styles.sectionTitle}>Start free.<br />Go deeper when you&apos;re ready.</h2>
+          <p className={styles.sectionSub}>
+            Every plan includes pure-mode journaling and your full session history. Paid plans add real conversations — with your own digital self, and everyone else&apos;s.
+          </p>
+          <div className={styles.pricingGrid}>
+            {PRICING_TIERS.map(({ name, price, cadence, tagline, features, cta, badge }) => (
+              <div key={name} className={cx(styles.card, styles.priceCard, styles.noise, badge && styles.priceCardFeatured)}>
+                {badge && <span className={styles.priceBadge}>{badge}</span>}
+                <div className={styles.priceName}>{name}</div>
+                <div className={styles.priceAmount}>{price}<span className={styles.priceCadence}>{cadence}</span></div>
+                <p className={styles.priceTagline}>{tagline}</p>
+                <ul className={styles.priceFeatures}>
+                  {features.map((f) => <li key={f}>{f}</li>)}
+                </ul>
+                <a href="https://holopal.app" className={cx(styles.btn, styles.btnDark, styles.btnSm, styles.priceCta)}>{cta} →</a>
+              </div>
+            ))}
           </div>
         </section>
 

@@ -348,6 +348,98 @@
   .productCard { grid-template-columns: 1fr; }
 }
 
+/* ============ Pricing ============ */
+.pricingGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  align-items: stretch;
+}
+.priceCard {
+  position: relative;
+  padding: 30px 26px;
+  background: #E4DBCB;
+  display: flex;
+  flex-direction: column;
+}
+.priceCardFeatured {
+  background: linear-gradient(160deg, #CBDCE5, #B6CEDC);
+}
+.priceBadge {
+  position: absolute;
+  top: 26px;
+  right: 24px;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #FBF5EB;
+  background: #1A1712;
+  border-radius: 999px;
+  padding: 6px 12px;
+}
+.priceName {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #4d6472;
+  margin-bottom: 16px;
+}
+.priceAmount {
+  font-size: clamp(28px, 2.6vw, 34px);
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  margin-bottom: 12px;
+}
+.priceCadence {
+  font-size: 14px;
+  font-weight: 500;
+  color: #55503f;
+  margin-left: 4px;
+}
+.priceTagline {
+  font-size: 14px;
+  line-height: 1.55;
+  color: #55503f;
+  margin-bottom: 22px;
+}
+.priceFeatures {
+  list-style: none;
+  margin: 0 0 28px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 11px;
+  flex: 1;
+}
+.priceFeatures li {
+  font-size: 13px;
+  line-height: 1.55;
+  color: #2A2923;
+  padding-left: 22px;
+  position: relative;
+}
+.priceFeatures li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 700;
+  color: #4d6472;
+}
+.priceCta {
+  justify-content: center;
+  width: 100%;
+}
+
+@media (max-width: 1000px) {
+  .pricingGrid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 560px) {
+  .pricingGrid { grid-template-columns: 1fr; }
+}
+
 /* ============ Team ============ */
 .teamGrid {
   display: grid;
