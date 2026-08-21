@@ -56,55 +56,31 @@ const PRICING_TIERS = [
     name: "Free",
     price: "$0",
     cadence: "",
-    tagline: "Journal, reflect, and browse — no cost, no time limit.",
+    tagline: "Journal, reflect, and start talking — no cost, no time limit on the basics.",
     features: [
-      "Pure-mode (text-only) journaling",
-      "Your full personal session history",
-      "Browse friends' public journal sessions as static content",
-      "No conversations, voice cloning, or animation",
+      "Unlimited pure-mode (text-only) journaling",
+      "15 minutes of conversational journaling",
+      "1 animated conversation with your digital self, 1 with someone else's",
+      "30 minutes of cloned-voice conversation",
+      "5 imports, 10 questions to your digital self, 10 to others'",
     ],
     cta: "Start free",
   },
   {
-    name: "Basic",
-    price: "$9.99",
+    name: "Paid",
+    price: "19.90 CHF",
     cadence: "/month",
-    tagline: "Start having real conversations, in a synthetic voice.",
+    featured: true,
+    tagline: "Real, ongoing conversations — with your own digital self, and everyone else's.",
     features: [
       "Everything in Free",
-      "Conversational-mode journaling — 30 min/month",
-      "Talk to your digital self — synthetic voice",
-      "Talk to others' digital selves — synthetic voice",
-      "No animation",
+      "30 minutes of conversational journaling every month",
+      "Unlimited cloned-voice conversations — yours and others'",
+      "Unlimited questions to any digital self",
+      "Unlimited imports",
+      "3 minutes/month of animation, then a still image",
     ],
-    cta: "Get Basic",
-  },
-  {
-    name: "Advanced",
-    price: "$16.99",
-    cadence: "/month",
-    badge: "Most popular",
-    tagline: "Hear the real voice. See the real face.",
-    features: [
-      "Everything in Free",
-      "Conversational-mode journaling — 30 min/month",
-      "30 min/month of cloned voice — yours or others' digital selves, then synthetic voice",
-      "Two animated conversations — one with your digital self, one with someone else's — then continues as a still image",
-    ],
-    cta: "Get Advanced",
-  },
-  {
-    name: "Pro",
-    price: "$29.99",
-    cadence: "/month",
-    tagline: "Unlimited conversations, always in the real cloned voice.",
-    features: [
-      "Everything in Free",
-      "Unlimited conversational-mode journaling",
-      "Unlimited talk to your digital self and others' digital selves — cloned voice",
-      "10 minutes of animation per month, shared across every conversation",
-    ],
-    cta: "Get Pro",
+    cta: "Upgrade",
   },
 ];
 
@@ -316,12 +292,11 @@ export default function HoloMostPage() {
           <span className={styles.eyebrow}>Pricing</span>
           <h2 className={styles.sectionTitle}>Start free.<br />Go deeper when you&apos;re ready.</h2>
           <p className={styles.sectionSub}>
-            Every plan includes pure-mode journaling and your full session history. Paid plans add real conversations — with your own digital self, and everyone else&apos;s.
+            Every plan includes pure-mode journaling and your full session history. The paid plan adds real, ongoing conversations — with your own digital self, and everyone else&apos;s.
           </p>
           <div className={styles.pricingGrid}>
-            {PRICING_TIERS.map(({ name, price, cadence, tagline, features, cta, badge }) => (
-              <div key={name} className={cx(styles.card, styles.priceCard, styles.noise, badge && styles.priceCardFeatured)}>
-                {badge && <span className={styles.priceBadge}>{badge}</span>}
+            {PRICING_TIERS.map(({ name, price, cadence, tagline, features, cta, featured }) => (
+              <div key={name} className={cx(styles.card, styles.priceCard, styles.noise, featured && styles.priceCardFeatured)}>
                 <div className={styles.priceName}>{name}</div>
                 <div className={styles.priceAmount}>{price}<span className={styles.priceCadence}>{cadence}</span></div>
                 <p className={styles.priceTagline}>{tagline}</p>

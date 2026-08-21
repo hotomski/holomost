@@ -351,9 +351,11 @@
 /* ============ Pricing ============ */
 .pricingGrid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 20px;
   align-items: stretch;
+  max-width: 720px;
+  margin: 0 auto;
 }
 .priceCard {
   position: relative;
@@ -433,9 +435,6 @@
   width: 100%;
 }
 
-@media (max-width: 1000px) {
-  .pricingGrid { grid-template-columns: repeat(2, 1fr); }
-}
 @media (max-width: 560px) {
   .pricingGrid { grid-template-columns: 1fr; }
 }
