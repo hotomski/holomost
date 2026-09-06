@@ -59,7 +59,7 @@ const PRICING_TIERS = [
     tagline: "Journal, reflect, and start talking — no cost, no time limit on the basics.",
     features: [
       "Unlimited pure-mode (text-only) journaling",
-      "15 minutes of conversational journaling",
+      "5 minutes of conversational journaling",
       "Conversations with a still portrait. Animation is in Paid.",
       "30 minutes of cloned-voice conversation",
       "5 imports, 10 questions to your digital self, 10 to others'",
