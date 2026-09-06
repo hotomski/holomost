@@ -68,7 +68,7 @@ const PRICING_TIERS = [
   },
   {
     name: "Paid",
-    price: "19.90 CHF",
+    price: "24.90 CHF",
     cadence: "/month",
     featured: true,
     tagline: "Real, ongoing conversations — with your own digital self, and everyone else's.",
