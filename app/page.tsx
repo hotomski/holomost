@@ -62,7 +62,7 @@ const PRICING_TIERS = [
       "5 minutes of conversational journaling",
       "Conversations with a still portrait. Animation is in Paid.",
       "5 minutes of cloned-voice conversation",
-      "5 imports, 10 questions to your digital self, 10 to others'",
+      "1 import, 2 questions to your digital self, 2 to others'",
     ],
     cta: "Start free",
   },
