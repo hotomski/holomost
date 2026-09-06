@@ -60,7 +60,7 @@ const PRICING_TIERS = [
     features: [
       "Unlimited pure-mode (text-only) journaling",
       "15 minutes of conversational journaling",
-      "1 animated conversation with your digital self, 1 with someone else's",
+      "Conversations with a still portrait. Animation is in Paid.",
       "30 minutes of cloned-voice conversation",
       "5 imports, 10 questions to your digital self, 10 to others'",
     ],
