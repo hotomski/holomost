@@ -77,7 +77,7 @@ const PRICING_TIERS = [
       "30 minutes of conversational journaling every month",
       "Unlimited cloned-voice conversations — yours and others'",
       "Unlimited questions to any digital self",
-      "Unlimited imports",
+      "15 imports a month",
       "3 minutes/month of animation, then a still image",
     ],
     cta: "Upgrade",
