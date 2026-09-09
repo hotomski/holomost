@@ -175,7 +175,7 @@ export default function HoloMostPage() {
           <h2 className={styles.sectionTitle}>Watch the HoloPal demo.</h2>
           <div className={cx(styles.videoCard, styles.noise)}>
             <video
-              src="/videos/demo-final.mp4"
+              src="/videos/demo-subtitled.mp4"
               className={styles.videoCardVideo}
               controls
               playsInline
