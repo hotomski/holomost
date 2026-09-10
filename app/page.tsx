@@ -33,15 +33,15 @@ const TEAM = [
 const PILLARS = [
   {
     word: "Wisdom",
-    body: "How they think. The instincts built from a lifetime of experience. The intuition that tells them which detail matters — the hardest thing to put into words, and the most useful thing to have on demand.",
+    body: "How they think. The instincts built from a lifetime of experience. The intuition that tells them which detail matters. The hardest thing to put into words, and the most useful thing to have on demand.",
   },
   {
     word: "Knowledge",
-    body: "What they know. Forty years of patients. Every student they've helped. A lifetime of learning, available to anyone who asks — any hour, not just when there's time.",
+    body: "What they know. Every student they've helped. Every question a colleague asked after they'd left the office. The recipe sent as a photo a dozen times. Available to anyone who asks, any hour, not just when there's time.",
   },
   {
     word: "Presence",
-    body: "Their voice. Their face. The feeling of being in a real conversation with someone who knows. Presence is what makes knowledge feel safe to trust — now available whenever you need it.",
+    body: "Their voice. Their face. The feeling of being in a real conversation with someone who knows. Presence is what makes knowledge feel safe to trust, now available whenever you need it.",
   },
 ];
 
@@ -161,10 +161,10 @@ export default function HoloMostPage() {
         {/* ===== Hero ===== */}
         <section className={styles.container}>
           <div className={cx(styles.card, styles.heroCard, styles.noise)}>
-            <span className={styles.eyebrowPill}>Building bridges between people and their preserved wisdom</span>
+            <span className={styles.eyebrowPill}>Building bridges between people, across time zones and schedules</span>
             <h1>Human knowledge<br />shouldn&apos;t be scarce.</h1>
             <p className={styles.heroLede}>
-              HoloMost is building the first social network of digital selves — where the wisdom, knowledge, and presence of remarkable people is available to the world in their own voice, from their own face. Not posts you scroll past. Real conversations.
+              HoloMost is building the first social network of digital selves. The wisdom, knowledge, and presence of the people you&apos;d ask, available even when they&apos;re not present. In their own voice, from their own face. Not posts you scroll past. Real conversations.
             </p>
           </div>
         </section>
@@ -224,18 +224,18 @@ export default function HoloMostPage() {
             <div className={styles.missionColumns}>
               <div>
                 <p className={styles.bodyLg}>
-                  &ldquo;Most&rdquo; means bridge in Serbian. We are three sisters who believe that the most valuable thing a person can leave behind isn&apos;t money or possessions — it&apos;s how they think.
+                  &ldquo;Most&rdquo; means bridge in Serbian. We believe the most valuable thing a person has to give isn&apos;t money or possessions. It&apos;s how they think. And it shouldn&apos;t depend on being in the same room.
                 </p>
                 <p className={cx(styles.bodyLg, styles.bodyMuted)}>
-                  For all of human history, knowledge has traveled through proximity. You had to be in the right room, at the right time, to learn from the right person. Most of it was lost.
+                  For all of human history, knowledge has traveled through proximity. You had to be in the right room, at the right time, to ask the right person. Most questions never got asked.
                 </p>
               </div>
               <div>
                 <p className={cx(styles.bodyLg, styles.bodyMuted)}>
-                  We are the first generation with the tools to change that — AI that learns how a person thinks, voice technology that captures how they sound, animation that puts them in front of you.
+                  We are the first generation with the tools to change that. AI that learns how a person thinks, voice technology that captures how they sound, animation that puts them in front of you.
                 </p>
                 <p className={cx(styles.bodyLg, styles.bodyMuted)}>
-                  HoloMost exists to close that gap. Not by replacing people — people are irreplaceable — but by making what can be shared available at scale, and present even when you can&apos;t be in the room.
+                  HoloMost exists to close that gap. Nobody is being replaced. People are irreplaceable. What they can share becomes available at scale, and present even when they can&apos;t be in the room.
                 </p>
               </div>
             </div>
@@ -262,14 +262,14 @@ export default function HoloMostPage() {
         {/* ===== Product ===== */}
         <section className={styles.container} id="product">
           <span className={styles.eyebrow}>Our product</span>
-          <h2 className={styles.sectionTitle}>HoloPal — the first social network<br />of digital selves.</h2>
+          <h2 className={styles.sectionTitle}>HoloPal. The first social network<br />of digital selves.</h2>
           <div className={styles.productCard}>
             <div className={styles.productCopy}>
               <p>
-                Every person on HoloPal builds a digital self — an AI trained on their own knowledge, speaking in their own cloned voice, animated with their own face.
+                Every person on HoloPal builds a digital self: an AI trained on their own knowledge, speaking in their own cloned voice, animated with their own face. It grows out of living and sharing, not out of digging through the past.
               </p>
               <p>
-                You don&apos;t scroll their posts. You have a real conversation with them. Add your GP&apos;s digital self, your professor&apos;s, your family&apos;s — and hear the answer in the voice you know, from the face you trust.
+                You don&apos;t scroll their posts. You have a real conversation with them. Add your mom&apos;s digital self, your professor&apos;s, your teammate&apos;s, and hear the answer in the voice you know, from the face you trust.
               </p>
               <a href="https://holopal.app" className={cx(styles.btn, styles.btnDark, styles.btnSm)}>Try HoloPal →</a>
             </div>
@@ -314,7 +314,7 @@ export default function HoloMostPage() {
           <span className={styles.eyebrow}>The team</span>
           <h2 className={styles.sectionTitle}>Three sisters. One bridge.</h2>
           <p className={styles.sectionSub}>
-            We built HoloMost because we wanted to preserve the voice of someone we love. We suspect we&apos;re not the only ones.
+            We built HoloMost because the people we love know more than they&apos;ll ever have time to share. We suspect we&apos;re not the only ones.
           </p>
           <div className={styles.teamGrid}>
             {TEAM.map(({ name, role, bio, photo, email }) => (

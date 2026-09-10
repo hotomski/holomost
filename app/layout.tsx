@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "HoloMost — Building the bridge between people and their preserved wisdom",
+  title: "HoloMost — Building bridges between people, across time zones and schedules",
   description: "HoloMost is a technology company building tools that make human knowledge scalably available. Our flagship product is HoloPal.",
 };
 
