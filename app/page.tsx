@@ -46,7 +46,7 @@ const PILLARS = [
 ];
 
 const PRODUCT_STEPS = [
-  { icon: "/images/icon-journal.svg", label: "Build", desc: "Journal your knowledge, memories, and reasoning. Ten minutes a week is enough." },
+  { icon: "/images/icon-journal.svg", label: "Build", desc: "Journal your knowledge, memories, and reasoning. Only ten minutes a week makes a significant impact. You do not have to journal daily." },
   { icon: "/images/icon-talk.svg", label: "Verify", desc: "Talk to your hologram. Correct what's wrong until it sounds like you." },
   { icon: "/images/icon-ask.svg", label: "Share", desc: "Go live in the network. Anyone you choose can have a real conversation with you." },
 ];
